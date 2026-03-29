@@ -1,0 +1,9 @@
+framework,control_id,control_title,domain,owner_team,priority
+ISO 27001,A.9.1.1,Access control policy,Access Control,Security Team,High
+ISO 27001,A.9.2.1,User access provisioning,Access Control,IT Operations,High
+ISO 27001,A.12.1.1,Documented operating procedures,Operations,Compliance Team,Medium
+NIST CSF,PR.AC-1,Identifies and manages the creation, change, and deletion of user accounts,Access Control,IT Operations,Medium
+NIST CSF,PR.DS-1,Data-at-rest is protected,Data Protection,Security Team,High
+PCI DSS,Requirement 3,Protect stored cardholder data,Data Protection,Security Team,High
+PCI DSS,Requirement 7,Implement strong access control measures,Access Control,IT Operations,Medium
+GDPR,Article 25,Data protection by design and by default,Privacy,Compliance Team,Medium

@@ -1,0 +1,13 @@
+evidence_id,control_id,evidence_title,evidence_type,file_reference,owner,status,collected_date,review_date,notes
+E001,A.9.1.1,Access Control Policy Document,Policy,docs/policy.pdf,Alice Johnson,valid,2023-01-15,2026-01-15,Annual review completed
+E002,A.9.2.1,User Provisioning Procedure,Procedure,docs/provisioning.pdf,Bob Smith,valid,2023-03-01,2026-02-01,Updated for new hires
+E003,A.12.1.1,Operations Manual,Manual,docs/ops_manual.pdf,Carol Davis,valid,2023-02-01,2024-02-01,Quarterly review done
+E004,PR.AC-1,User Account Management SOP,SOP,docs/user_mgmt.pdf,Bob Smith,stale,2023-06-01,2023-06-01,Needs update for automation
+E005,PR.DS-1,Data Encryption Policy,Policy,docs/encryption.pdf,Alice Johnson,valid,2023-04-01,2026-03-01,Reviewed with legal
+E006,Requirement 3,PCI Data Protection Guidelines,Guidelines,docs/pci_data.pdf,Alice Johnson,stale,2023-05-01,2023-05-01,Pending PCI DSS v4 update
+E007,Requirement 7,Access Control Implementation,Implementation,docs/access_impl.pdf,Bob Smith,draft,2023-07-01,,Draft pending approval
+E008,Article 25,Privacy by Design Framework,Framework,docs/privacy_design.pdf,Carol Davis,valid,2023-08-01,2026-01-01,GDPR compliance verified
+E009,A.9.1.1,Access Control Audit Report,Audit Report,docs/audit_access.pdf,Diana Evans,valid,2023-09-01,2026-02-15,External audit findings
+E010,PR.AC-1,Access Review Process,Process,docs/access_review.pdf,Bob Smith,valid,2023-10-01,2026-03-15,Monthly reviews implemented
+E011,UNKNOWN123,Unknown Control Evidence,Document,docs/unknown.pdf,Eve Foster,valid,2023-11-01,2024-11-01,Mapped to non-existent control
+E012,Requirement 3,Tokenization Implementation,Implementation,docs/tokenization.pdf,Alice Johnson,valid,2023-12-01,2026-01-20,Third-party solution validated
